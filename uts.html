@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workshop Pengembangan Web Modern - Informasi & Pendaftaran</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <h1>Workshop Pengembangan Web Modern</h1>
+      <nav aria-label="Navigasi Utama">
+        <a href="#tentang">Tentang</a>
+        <a href="#rundown">Rundown & Syarat</a>
+        <a href="#daftar">Daftar Sekarang</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="tentang" class="card section-tentang">
+        <img src="images/kegiatan.jpeg" alt="Suasana peserta workshop pemrograman web di laboratorium komputer">
+        <div class="tentang-konten">
+          <h2>Tentang Kegiatan</h2>
+          <p>
+            Kegiatan ini merupakan pelatihan intensif untuk membangun antarmuka website yang 
+            <strong>responsif, rapi, dan aksesibel</strong> menggunakan standar <em>HTML5 Semantik</em> 
+            serta tata letak <em>CSS Flexbox</em>. Terbuka bagi seluruh mahasiswa yang ingin memperdalam 
+            keterampilan pengembangan web front-end.
+          </p>
+          <a href="https://developer.mozilla.org/id/docs/Learn/CSS/CSS_layout/Flexbox" target="_blank" rel="noreferrer" class="external-link">
+            Baca Panduan Lengkap CSS Flexbox &nearr;
+          </a>
+        </div>
+      </section>
+
+      <section id="rundown" class="section-rundown">
+        <div class="card kolom-rundown">
+          <h2>Syarat Peserta</h2>
+          <ul>
+            <li>Mahasiswa aktif Fakultas Sains dan Teknologi Informasi.</li>
+            <li>Membawa laptop pribadi dengan teks editor (VS Code) terpasang.</li>
+            <li>Memiliki minat belajar dasar struktur HTML dan CSS.</li>
+          </ul>
+        </div>
+
+        <div class="card kolom-rundown">
+          <h2>Alur Pendaftaran</h2>
+          <ol>
+            <li>Isi data diri dengan lengkap pada formulir pendaftaran di bawah.</li>
+            <li>Verifikasi kelengkapan data dan pilih divisi minat kegiatan.</li>
+            <li>Klik tombol Kirim Pendaftaran untuk mendapatkan konfirmasi.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="daftar" class="card section-daftar">
+        <h2>Formulir Pendaftaran Kegiatan</h2>
+        <form action="#" method="post" class="form-pendaftaran">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nama">Nama Lengkap</label>
+              <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+            </div>
+
+            <div class="form-group">
+              <label for="surel">Alamat Surel (Email)</label>
+              <input type="email" id="surel" name="surel" placeholder="nama@email.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="tgl_lahir">Tanggal Lahir</label>
+              <input type="date" id="tgl_lahir" name="tgl_lahir">
+            </div>
+
+            <div class="form-group">
+              <label for="divisi">Pilihan Divisi</label>
+              <select id="divisi" name="divisi">
+                <option value="frontend">Front-End Web Design</option>
+                <option value="uiux">UI/UX Prototyping</option>
+                <option value="backend">Back-End Integration</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-footer">
+            <div class="checkbox-group">
+              <input type="checkbox" id="persetujuan" name="persetujuan" required>
+              <label for="persetujuan">Saya menyatakan data yang diisi benar dan bersedia mengikuti seluruh rangkaian kegiatan.</label>
+            </div>
+
+            <button type="submit" class="btn-submit">Kirim Pendaftaran</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Pemrograman Web &middot; Informasi Panitia Kegiatan</p>
+    </footer>
+  </div>
+</body>
+</html>
